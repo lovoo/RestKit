@@ -19,13 +19,12 @@
 //
 
 
-#import "RKTestFixture.h"
-#import "RKTestNotificationObserver.h"
-#import "RKTestFactory.h"
-#import "RKTestHelpers.h"
-#import "RKMappingTest.h"
+#import "Testing/RKTestFixture.h"
+#import "Testing/RKTestNotificationObserver.h"
+#import "Testing/RKTestFactory.h"
+#import "Testing/RKTestHelpers.h"
+#import "Testing/RKMappingTest.h"
 
 #if __has_include("CoreData.h")
-#import "RKConnectionTestExpectation.h"
+#import "Testing/RKConnectionTestExpectation.h"
 #endif
-

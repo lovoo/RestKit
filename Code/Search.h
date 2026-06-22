@@ -18,9 +18,9 @@
 //  limitations under the License.
 //
 
-#import "RKSearchPredicate.h"
+#import "Search/RKSearchPredicate.h"
 
 #if __has_include("CoreData.h")
-#import "RKSearchIndexer.h"
-#import "RKManagedObjectStore+RKSearchAdditions.h"
+#import "Search/RKSearchIndexer.h"
+#import "Search/RKManagedObjectStore+RKSearchAdditions.h"
 #endif
