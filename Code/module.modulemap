@@ -1,0 +1,6 @@
+framework module RestKit {
+    umbrella "."
+
+    export *
+    module * { export * }
+}

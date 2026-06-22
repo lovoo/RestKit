@@ -1,6 +1,7 @@
 # the build
 Build
 build
+.build
 # DerivedData
 Docs/API
 
