@@ -13,6 +13,22 @@ let package = Package(
             name: "RestKit",
             targets: ["RestKit"]
         ),
+        .library(
+            name: "ISO8601DateFormatterValueTransformer",
+            targets: ["ISO8601DateFormatterValueTransformer"]
+        ),
+        .library(
+            name: "RKValueTransformers",
+            targets: ["RKValueTransformers"]
+        ),
+        .library(
+            name: "SOCKit",
+            targets: ["SOCKit"]
+        ),
+        .library(
+            name: "TransitionKit",
+            targets: ["TransitionKit"]
+        ),
     ],
     targets: [
         .target(
