@@ -75,7 +75,10 @@ let package = Package(
         ),
         .target(
             name: "RKValueTransformers",
-            path: "Vendor/RKValueTransformers/Code",
+            path: "Vendor/RKValueTransformers",
+            sources: [
+                "Code",
+            ],
             publicHeadersPath: "."
         ),
         .target(

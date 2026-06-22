@@ -1,0 +1,6 @@
+module RKValueTransformers {
+    umbrella header "RKValueTransformers/RKValueTransformers.h"
+
+    export *
+    module * { export * }
+}
