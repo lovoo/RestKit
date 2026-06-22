@@ -18,7 +18,7 @@
 //  limitations under the License.
 //
 
-#import "RKManagedObjectStore.h"
+#import "../CoreData/RKManagedObjectStore.h"
 #import "RKSearchIndexer.h"
 
 /**

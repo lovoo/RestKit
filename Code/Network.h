@@ -30,5 +30,5 @@
 #import "Network/RKPathMatcher.h"
 
 #if __has_include("CoreData.h")
-#import "CoreData/RKManagedObjectRequestOperation.h"
+#import "Network/RKManagedObjectRequestOperation.h"
 #endif

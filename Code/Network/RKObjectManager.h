@@ -20,9 +20,9 @@
 
 #import "RKRouter.h"
 #import "RKPaginator.h"
-#import "RKMacros.h"
+#import "../Support/RKMacros.h"
 
-#import "AFRKNetworking.h"
+#import "AFNetworking/AFRKNetworking.h"
 
 #if __has_include("CoreData.h")
 #   define RKCoreDataIncluded
