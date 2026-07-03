@@ -258,8 +258,14 @@ static NSArray *RKRemoveProperty(NSArray *array, RKPropertyMapping *mapping)
 
 - (void)addPropertyMapping:(RKPropertyMapping *)propertyMapping
 {
-    NSAssert1([[self mappedKeyPaths] containsObject:propertyMapping.destinationKeyPath] == NO,
-              @"Unable to add mapping for keyPath %@, one already exists...", propertyMapping.destinationKeyPath);
+    RKPropertyMapping *existingMapping = (self.propertiesByDestinationKeyPath)[propertyMapping.destinationKeyPath];
+    if ([[self mappedKeyPaths] containsObject:propertyMapping.destinationKeyPath]) {
+        RKLogWarning(@"Duplicate RestKit mapping destination keyPath '%@' for %@. Existing: %@. New: %@.",
+              propertyMapping.destinationKeyPath,
+              NSStringFromClass(self.objectClass),
+              existingMapping,
+              propertyMapping);
+    }
     NSAssert(self.propertyMappings, @"self.propertyMappings is nil");
     NSAssert(propertyMapping.objectMapping == nil, @"Cannot add a property mapping object that has already been added to another `RKObjectMapping` object. You probably want to obtain a copy of the mapping: `[propertyMapping copy]`");
     propertyMapping.objectMapping = self;
